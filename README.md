@@ -6,4 +6,4 @@ Author-Karan Dugar.
 <br>
 1.Tribute Page
 <br>
-![Alt text](image link)
+![Alt text](Tribute/images/Tribute.png)
