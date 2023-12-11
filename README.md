@@ -10,5 +10,5 @@ Author-Karan Dugar.
 <br><br>
 2.Survey Form
 <br><br>
-![Alt text](Survey-Form/images/background.png)
+![Alt text](Survey-Form/images/webpage.png)
 
