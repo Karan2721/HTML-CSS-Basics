@@ -7,3 +7,8 @@ Author-Karan Dugar.
 1.Tribute Page
 <br><br>
 ![Alt text](Tribute/images/Tribute.png)
+<br><br>
+2.Survey Form
+<br><br>
+![Alt text](Survey-Form/images/background.png)
+
