@@ -66,3 +66,142 @@ header p{
 .content input:focus,textarea:focus{
     outline-color: #ffa5c6;
 }
+@media screen and (max-width:680px)
+{
+    header{
+        margin:2em 3em;
+    }
+    .content{
+        padding:1.5em 3em;
+    }
+}
+@media screen and (max-width:650px)
+{
+    .content #name{
+        margin-left: 1.9em;
+        margin-right: 0.8em;
+        width: 13em;
+    }
+    .content #gender{
+        margin-left: 0.4em;
+        width:6em;
+        margin-right: 0;
+    }
+    .content #address{
+        margin-left: 0.8em;
+        width: 25.5em;
+        margin-right: 0;
+    }
+    .content #email{
+        margin-left: 2.2em;
+        width: 25.5em;
+        margin-right: 0;
+    }
+    .content #phone{
+        margin-left: 1.7em;
+        width:11em;
+        margin-right: 0;
+    }
+    textarea{
+        width: 31.5em;
+    }
+}
+@media screen and (max-width:540px)
+{
+    .content #name{
+        margin-left: 1.9em;
+        margin-right: 0.8em;
+        width: 9em;
+    }
+    .content #gender{
+        margin-left: 0.4em;
+        width:5em;
+        margin-right: 0;
+    }
+    .content #address{
+        margin-left: 0.8em;
+        width: 20.5em;
+        margin-right: 0;
+    }
+    .content #email{
+        margin-left: 2.2em;
+        width: 20.5em;
+        margin-right: 0;
+    }
+    .content #phone{
+        margin-left: 1.7em;
+        width:9em;
+        margin-right: 0;
+    }
+    textarea{
+        width: 29.5em;
+    }
+}
+@media screen and (max-width:480px)
+{
+    .content #name{
+        margin-left: 1.9em;
+        margin-right: 0.8em;
+        width: 8em;
+    }
+    .content #gender{
+        margin-left: 0.4em;
+        width:4em;
+        margin-right: 0;
+    }
+    .content #address{
+        margin-left: 0.8em;
+        width: 18.5em;
+        margin-right: 0;
+    }
+    .content #email{
+        margin-left: 2.2em;
+        width: 18.5em;
+        margin-right: 0;
+    }
+    .content #phone{
+        margin-left: 1.7em;
+        width:8em;
+        margin-right: 0;
+    }
+    textarea{
+        width: 25.5em;
+    }
+}
+@media screen and (max-width:447px)
+{
+    header{
+        margin:2em 2em;
+    }
+    .content{
+        padding:1.5em 2em;
+    }
+    .content #name{
+        margin-left: 1.9em;
+        margin-right: 0.8em;
+        width: 7em;
+    }
+    .content #gender{
+        margin-left: 0.4em;
+        width:3em;
+        margin-right: 0;
+    }
+    .content #address{
+        margin-left: 0.8em;
+        width: 16.5em;
+        margin-right: 0;
+    }
+    .content #email{
+        margin-left: 2.2em;
+        width: 16.5em;
+        margin-right: 0;
+    }
+    .content #phone{
+        margin-left: 1.7em;
+        width:7em;
+        margin-right: 0;
+    }
+    textarea{
+        width: 23.5em;
+    }
+}
