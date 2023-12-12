@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Boolean Algebra</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <div class="sidebar">
+            <h2>Topics</h2>
+            <ul>
+                <li><a class="nav" href="#introduction">Introduction</a></li>
+                <li><a class="nav" href="#operations">Operations</a></li>
+                <li><a class="nav" href="#terminologies">Terminologies</a></li>
+                <li><a class="nav" href="#truthtable">Truth Table</a></li>
+                <li><a class="nav" href="#rules">Rules</a></li>
+                <li><a class="nav" href="#laws">Laws</a></li>
+                <li><a class="nav" href="#theorems">Theorems</a></li>
+                <li><a class="nav" href="#examples">Examples</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>BOOLEAN ALGEBRA</h1>
+            <div id="introduction">
+                <h2>Introduction</h2>
+                <p>Boolean algebra is the category of algebra in which the variable’s values are the truth values, true and false, ordinarily denoted 1 and 0 respectively. It is used to analyze and simplify digital circuits or digital gates. It is also called Binary Algebra or logical Algebra. It has been fundamental in the development of digital electronics and is provided for in all modern programming languages. It is also used in set theory and statistics.</p>
+                <p></p>The important operations performed in Boolean algebra are – conjunction (∧), disjunction (∨) and negation (¬). Hence, this algebra is far way different from elementary algebra where the values of variables are numerical and arithmetic operations like addition, subtraction is been performed on them.</p>
+            </div>
+            <div id="operations">
+                <h2>Boolean Algebra Operations</h2>
+                <p>The basic operations of Boolean algebra are as follows:</p>
+                <ul>
+                    <li>Conjunction or AND operation</li>
+                    <li>Disjunction or OR operation</li>
+                    <li>Negation or Not operation</li>
+                </ul>
+                <img src="images/operations.png" alt="operations">
+                <p>Below is the table defining the symbols for all three basic operations.</p>
+                <table>
+                    <tr>
+                        <th>Opeartor</th>
+                        <th>Symbol</th>
+                        <th>Precedence</th>
+                    </tr>
+                    <tr>
+                        <td>NOT</td>
+                        <td>‘ (or) ¬</td>
+                        <td>Highest</td>
+                    </tr>
+                    <tr>
+                        <td>AND</td>
+                        <td>. (or) ∧</td>
+                        <td>Middle</td>
+                    </tr>
+                    <tr>
+                        <td>OR</td>
+                        <td>+ (or) ∨</td>
+                        <td>Lowest</td>
+                    </tr>
+                </table>
+                <p>Suppose A and B are two Boolean variables, then we can define the three operations as:</p>
+                <ul>
+                    <li>A conjunction B or A AND B, satisfies A ∧ B = True, if A = B = True or else A ∧ B = False.</li>
+                    <li>A disjunction B or A OR B, satisfies A ∨ B = False, if A = B = False, else A ∨ B = True.</li>
+                    <li>Negation A or ¬A satisfies ¬A = False, if A = True and ¬A = True if A = False</li>
+                </ul>
+                <h3>Boolean Expression</h3>
+                <p>A logical statement that results in a Boolean value, either be True or False, is a Boolean expression. Sometimes, synonyms are used to express the statement such as ‘Yes’ for ‘True’ and ‘No’ for ‘False’. Also, 1 and 0 are used for digital circuits for True and False, respectively.</p>
+                <p>Boolean expressions are the statements that use logical operators, i.e., AND, OR, XOR and NOT. Thus, if we write X AND Y = True, then it is a Boolean expression</p>
+            </div>
+            <div id="terminologies">
+                <h2>Boolean Algebra Terminologies</h2>
+                <p>Now, let us discuss the important terminologies covered in Boolean algebra.</p>
+                <p><span>Boolean Algebra:</span>Boolean algebra is the branch of algebra that deals with logical operations and binary variables.</p>
+                <p><span>Boolean Variables:</span>A Boolean variable is defined as a variable or a symbol defined as a variable or a symbol, generally an alphabet that represents the logical quantities such as 0 or 1.</p>
+                <p><span>Boolean Function:</span>A Boolean function consists of binary variables, logical operators, constants such as 0 and 1, equal to the operator, and the parenthesis symbols.</p>
+                <p><span>Literal</span>A literal may be a variable or a complement of a variable.</p>
+                <p><span>Complement:</span>The complement is defined as the inverse of a variable, which is represented by a bar over the variable.</p>
+                <p><span>Truth Table:</span>The truth table is a table that gives all the possible values of logical variables and the combination of the variables. It is possible to convert the Boolean equation into a truth table. The number of rows in the truth table should be equal to 2n, where “n” is the number of variables in the equation. For example, if a Boolean equation consists of 3 variables, then the number of rows in the truth table is 8. (i.e.) 2^3 = 8.</p>
+            </div>
+            <div id="truthtable">
+                <h2>Boolean Algebra Truth Table</h2>
+                <p>Now, if we express the above operations in a truth table, we get:</p>
+                <table>
+                    <tr>
+                        <th>A</th>
+                        <th>B</th>
+                        <th>A ∧ B</th>
+                        <th>A ∨ B</th>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                </table>
+                <br><br>
+                <table>
+                    <tr>
+                        <th>A</th>
+                        <th>¬A</th>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>0</td>
+                    </tr>
+                </table>
+                <br><br>
+            </div>
+            <div class="rules">
+                <h2>Boolean Algebra Rules</h2>
+                <p>Following are the important rules used in Boolean algebra:</p>
+                <ul>
+                    <li>Variable used can have only two values. Binary 1 for HIGH and Binary 0 for LOW.</li>
+                    <li>The complement of a variable is represented by an overbar</li>
+                    <li>OR-ing of the variables is represented by a plus (+) sign between them. For example, the OR-ing of A, B, and C is represented as A + B + C.</li>
+                    <li>Logical AND-ing of the two or more variables is represented by writing a dot between them, such as A.B.C. Sometimes, the dot may be omitted like ABC.</li>
+                </ul>
+            </div>
+            <div id="laws">
+                <h2>Laws of Boolean Algebra</h2>
+                <p>There are six types of <a href="https://byjus.com/maths/boolean-algebra-laws/">Boolean algebra laws</a>.They are:</p>
+                <ul>
+                    <li>Commutative law</li>
+                    <li>Associative law</li>
+                    <li>Distributive law</li>
+                    <li>AND law</li>
+                    <li>OR law</li>
+                    <li>Inversion law</li>
+                </ul>
+                <p>Those six laws are explained in detail here.</p>
+                <h3>Commutative Law</h3>
+                <p>Any binary operation which satisfies the following expression is referred to as a commutative operation. Commutative law states that changing the sequence of the variables does not have any effect on the output of a logic circuit.</p>
+                <ul>
+                    <li>A. B = B. A</li>
+                    <li>A + B = B + A</li>
+                </ul>
+                <h3>Associative law</h3>
+                <p>It states that the order in which the logic operations are performed is irrelevant as their effect is the same</p>
+                <ul>
+                    <li>( A. B ). C = A . ( B . C )</li>
+                    <li>( A + B ) + C = A + ( B + C)</li>
+                </ul>
+                <h3>Distributive law</h3>
+                <p>Distributive law states the following conditions:</p>
+                <ul>
+                    <li>A. ( B + C) = (A. B) + (A. C)</li>
+                    <li>A + (B. C) = (A + B) . ( A + C)</li>
+                </ul>
+                <h3>AND law</h3>
+                <p>These laws use the AND operation. Therefore they are called AND laws.</p>
+                <ul>
+                    <li>A .0 = 0</li>
+                    <li>A .1 = A</li>
+                    <li>A .A = A</li>
+                    <li>A .~A = 0</li>
+                </ul>
+                <h3>OR law</h3>
+                <p>These laws use the OR operation. Therefore they are called OR laws.</p>
+                <ul>
+                    <li>A + 0 = A</li>
+                    <li>A + 1 = 1</li>
+                    <li>A + A = A</li>
+                    <li>A + ~A = 1</li>
+                </ul>
+                <h3>Inversion law</h3>
+                <p>In Boolean algebra, the inversion law states that double inversion of variable results in the original variable itself.</p>
+                <ul>
+                    <li>~(~A)=A</li>
+                </ul>
+            </div>
+            <div id="theorems">
+                <h2>Boolean Algebra Theorems</h2>
+                <p>The two important theorems which are extremely used in Boolean algebra are De Morgan’s First law and De Morgan’s second law. These two theorems are used to change the Boolean expression. This theorem basically helps to reduce the given Boolean expression in the simplified form. These two De Morgan’s laws are used to change the expression from one form to another form. Now, let us discuss these two theorems in detail.</p>
+                <h3>De Morgan's First Law:</h3>
+                <p>De Morgan’s First Law states that  (A.B)'' = A'+B'.</p>
+                <p>The first law states that the complement of the product of the variables is equal to the sum of their individual complements of a variable.</p>
+                <p>The truth table that shows the verification of De Morgan’s First law is given as follows:</p>
+                <table>
+                    <tr>
+                        <th>A</th>
+                        <th>B</th>
+                        <th>A'</th>
+                        <th>B'</th>
+                        <th>(A.B)'</th>
+                        <th>A'+B'</th>
+                    </tr>
+                    <tr>
+                        <th>0</th>
+                        <th>0</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>1</th>
+                    </tr>
+                    <tr>
+                        <th>0</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>0</th>
+                        <th>1</th>
+                        <th>1</th>
+                    </tr>
+                    <tr>
+                        <th>1</th>
+                        <th>0</th>
+                        <th>0</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>1</th>
+                    </tr>
+                    <tr>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>0</th>
+                        <th>0</th>
+                        <th>0</th>
+                        <th>0</th>
+                    </tr>
+                </table>
+                <br>
+                <p>The last two columns show that (A.B)' = A'+B'. Hence, De Morgan’s First Law is proved.</p>
+                <h3>De Morgan’s Second Law:</h3>
+                <p>De Morgan’s Second law states that (A+B)' = A'. B'.</p>
+                <p>The second law states that the complement of the sum of variables is equal to the product of their individual complements of a variable.</p>
+                <p>The following truth table shows the proof for De Morgan’s second law:</p>
+                <table>
+                    <tr>
+                        <th>A</th>
+                        <th>B</th>
+                        <th>A'</th>
+                        <th>B'</th>
+                        <th>(A+B)'</th>
+                        <th>A'. B'</th>
+                    </tr>
+                    <tr>
+                        <th>0</th>
+                        <th>0</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>1</th>
+                    </tr>
+                    <tr>
+                        <th>0</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>0</th>
+                        <th>0</th>
+                        <th>0</th>
+                    </tr>
+                    <tr>
+                        <th>1</th>
+                        <th>0</th>
+                        <th>0</th>
+                        <th>1</th>
+                        <th>0</th>
+                        <th>0</th>
+                    </tr>
+                    <tr>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>0</th>
+                        <th>0</th>
+                        <th>0</th>
+                        <th>0</th>
+                    </tr>
+                </table>
+                <br>
+                <p>The last two columns show that (A+B)' = A'. B'. Hence, De Morgan’s Second Law is proved.</p>
+                <p> The other theorems in Boolean algebra are complementary theorem, duality theorem, transposition theorem, redundancy theorem and so on. All these theorems are used to simplify the given Boolean expression. The reduced Boolean expression should be equivalent to the given Boolean expression.</p>
+            </div>
+            <div id="exampless">
+                <h2>Solved Examples</h2>
+                <p><span>Question 1:</span>Simplify the following expression: C + (B.C)'</p>
+                <p>Solution:</p>
+                <p>Given: C + (B.C)'</p>
+                <p>According to Demorgan’s law, we can write the above expressions as C + (B' + C')</p>
+                <p>From Commutative law: (C + C') + B</p>
+                <p>From Complement law: 1 + B</p>
+                <p>1 + B = 1</p>
+                <p>Therefore, C + (B.C)' = 1</p>
+                <p><span>Question 2:</span>Draw a truth table for A(B+C).</p>
+                <p>Solution:</p>
+                <table>
+                    <tr>
+                        <th>A</th>
+                        <th>B</th>
+                        <th>C</th>
+                        <th>B+C</th>
+                        <th>A.(B+C)</th>
+                    </tr>
+                    <tr>
+                        <th>0</th>
+                        <th>0</th>
+                        <th>0</th>
+                        <th>0</th>
+                        <th>0</th>
+                    </tr>
+                    <tr>
+                        <th>0</th>
+                        <th>0</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>0</th>
+                    </tr>
+                    <tr>
+                        <th>0</th>
+                        <th>1</th>
+                        <th>0</th>
+                        <th>1</th>
+                        <th>0</th>
+                    </tr>
+                    <tr>
+                        <th>0</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>0</th>
+                    </tr>
+                    <tr>
+                        <th>1</th>
+                        <th>0</th>
+                        <th>0</th>
+                        <th>0</th>
+                        <th>0</th>
+                    </tr>
+                    <tr>
+                        <th>1</th>
+                        <th>0</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>1</th>
+                    </tr>
+                    <tr>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>0</th>
+                        <th>1</th>
+                        <th>1</th>
+                    </tr>
+                    <tr>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>1</th>
+                    </tr>
+                </table>
+                <br><br>
+            </div>
+        </div>
+    </body>
+</html>
