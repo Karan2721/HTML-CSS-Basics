@@ -9,7 +9,7 @@ body{
     position: fixed;
     margin: 0;
     padding:0;
-    width:25%;
+    width:15%;
     height: 100%;
     text-align: center;
     border-right: 0.1em solid black;
@@ -38,7 +38,7 @@ body{
 .sidebar ul li{
     box-sizing: border-box;
     position: relative;
-    text-align: center;
+    text-align: left;
     padding:0.75em 0em;
     left:0em;
     margin: 0 0;
@@ -48,14 +48,15 @@ body{
 .sidebar .nav{
     text-align: center;
     text-decoration: none;
-    color:black
+    color:black;
+    margin:1.5em;
 }
 .content{
     position: relative;
     box-sizing: border-box;
     top:0;
-    left:25%;
-    width:75%;
+    left:15%;
+    width:85%;
     padding: 0em 3em;
 }
 .content h1{
@@ -100,4 +101,9 @@ p span{
 }
 img{
     max-width: 60%;
+}
+.sidebar ul li:hover{
+    background-color: rgb(213, 169, 255);
+    text-decoration-color: aliceblue;
+    text-decoration-style: bold;
 }
