@@ -11,4 +11,9 @@ Author-Karan Dugar.
 2.Survey Form
 <br><br>
 ![Alt text](Survey-Form/images/webpage.png)
-
+<br><br>
+3.Technical Documentation
+<br><br>
+![Alt text](technical-documentation/images/webpage.png)
+<br>
+Note : Aditional feature of a hiding nav bar can be added.
